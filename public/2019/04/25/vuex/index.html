@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>YJ的博客</title>
+  <title>vuex | YJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="前端,开发者,程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YJ的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 安装使用12345npm install vuex --saveimport Vue from &apos;vue&apos;;import Vuex from &apos;vuex&apos;;Vue.use(Vuex); 核心概念 Vuex 使用单一状态树,个应用将仅仅包含一个 store 实例,store基本上就是一个容器，它包含着应用中大部分的状态 (state)">
+<meta name="keywords" content="前端,开发者,程序猿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vuex">
+<meta property="og:url" content="http://yoursite.com/2019/04/25/vuex/index.html">
 <meta property="og:site_name" content="YJ的博客">
+<meta property="og:description" content="Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 安装使用12345npm install vuex --saveimport Vue from &apos;vue&apos;;import Vuex from &apos;vuex&apos;;Vue.use(Vuex); 核心概念 Vuex 使用单一状态树,个应用将仅仅包含一个 store 实例,store基本上就是一个容器，它包含着应用中大部分的状态 (state)">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-25T07:34:40.915Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YJ的博客">
+<meta name="twitter:title" content="vuex">
+<meta name="twitter:description" content="Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 安装使用12345npm install vuex --saveimport Vue from &apos;vue&apos;;import Vuex from &apos;vuex&apos;;Vue.use(Vuex); 核心概念 Vuex 使用单一状态树,个应用将仅仅包含一个 store 实例,store基本上就是一个容器，它包含着应用中大部分的状态 (state)">
   
     <link rel="alternative" href="/atom.xml" title="YJ的博客" type="application/atom+xml">
   
@@ -139,16 +143,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-vuex" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-vuex" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/25/vuex/">vuex</a>
+    <h1 class="article-title" itemprop="name">
+      vuex
     </h1>
   
 
@@ -168,9 +170,14 @@
 <li>更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串的 事件类型 (type) 和 一个 回调函数 (handler)。这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数；一条重要的原则就是要记住 mutation 必须是同步函数</li>
 <li>Action 提交的是 mutation，而不是直接变更状态;Action 可以包含任意异步操作;Action 函数接受一个与 store 实例具有相同方法和属性的 context 对象，因此你可以调用 context.commit 提交一个 mutation，或者通过 context.state 和 context.getters 来获取 state 和 getters</li>
 </ul>
-        
-          <a class="article-more-a" href="/2019/04/25/vuex/#more">more >></a>
-        
+<a id="more"></a> 
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const store = new Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    count: 0</span><br><span class="line">  &#125;,</span><br><span class="line">  mutations: &#123;</span><br><span class="line">    countMutation(state, value) &#123;</span><br><span class="line">      state.count = value;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  actions: &#123;</span><br><span class="line">    countAction(context, value) &#123;</span><br><span class="line">      context.commit(<span class="string">'countMutation'</span>, value);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="组件中的使用"><a href="#组件中的使用" class="headerlink" title="组件中的使用"></a>组件中的使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import &#123; mapState, mapGetters, mapActions &#125; from <span class="string">"vuex"</span>;</span><br><span class="line"></span><br><span class="line">computed: &#123;</span><br><span class="line">  // 映射 this.count 为 store.state.count</span><br><span class="line">  ...mapState([</span><br><span class="line">    <span class="string">"count"</span></span><br><span class="line">  ])</span><br><span class="line">&#125;,</span><br><span class="line">methods: &#123;</span><br><span class="line">  // 将this.countAction() 映射为this.<span class="variable">$store</span>.dispatch(<span class="string">'countAction'</span>)</span><br><span class="line">  ...mapActions([</span><br><span class="line">    <span class="string">"countAction"</span></span><br><span class="line">  ]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改变count的值</span><br><span class="line">this.countAction(1)</span><br></pre></td></tr></table></figure>
+<p>如果直接去改变count<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.count = 1</span><br></pre></td></tr></table></figure></p>
+<p>vue会有警告，但是count也是成功改变的，但是这不利于vue的调试工具devtools-extension跟踪每一次的状态变化，所以建议不要直接修改state，最好通过提交mutation来操作</p>
+<h2 id="getter"><a href="#getter" class="headerlink" title="getter"></a>getter</h2><p>有时候我们需要从 store 中的 state 中派生出一些状态，例如对count有额外的操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">const store = new Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    count: 0,</span><br><span class="line">    number: 0</span><br><span class="line">  &#125;,</span><br><span class="line">  getters: &#123;</span><br><span class="line">    // 希望在每次获取count的时候都加一</span><br><span class="line">    doCount: state =&gt; &#123;</span><br><span class="line">      <span class="built_in">return</span> state.count++</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /* getter也可以接受其他getter作为第二个参数</span><br><span class="line">      doNumber: (state, getters) =&gt; &#123;</span><br><span class="line">        <span class="built_in">return</span> state.number + getters.doCount</span><br><span class="line">      &#125;</span><br><span class="line">    */</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>组件中使用getter<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">  // 把 this.doCount 映射为this.<span class="variable">$store</span>.getters.doCount</span><br><span class="line">  // 把 this.doNumber 映射为this.<span class="variable">$store</span>.getters.doNumber</span><br><span class="line">  ...mapGetters([</span><br><span class="line">    <span class="string">'doCount'</span>,</span><br><span class="line">    <span class="string">'doNumber'</span></span><br><span class="line">  ])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
 
       
@@ -181,16 +188,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/25/vuex/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/25/vuex/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/24/js-xlsx的使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js-xlsx的使用</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -210,417 +276,14 @@
 
 
 
-
   
-    <article id="post-js-xlsx的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/24/js-xlsx的使用/">js-xlsx的使用</a>
-    </h1>
   
 
-        
-        <a href="/2019/04/24/js-xlsx的使用/" class="archive-article-date">
-  	<time datetime="2019-04-24T07:41:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install xlsx --save</span><br><span class="line"></span><br><span class="line">import XLSX from <span class="string">"xlsx"</span>;</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Promise" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/23/Promise/">Promise</a>
-    </h1>
   
 
-        
-        <a href="/2019/04/23/Promise/" class="archive-article-date">
-  	<time datetime="2019-04-23T09:26:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>promise对象用于异步操作，一共有三种状态</p>
-<ul>
-<li>pending 初始值</li>
-<li>fulfilled 操作成功</li>
-<li>rejected 操作失败  </li>
-</ul>
-<p>promise还有两个方法</p>
-<ul>
-<li>resolve 将pending转为fulfilled</li>
-<li>reject 将pending转为rejected</li>
-</ul>
-<p>当状态改变后，promise.then就会执行</p>
-        
-          <a class="article-more-a" href="/2019/04/23/Promise/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/23/Promise/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-async-await" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/22/async-await/">async/await</a>
-    </h1>
   
 
-        
-        <a href="/2019/04/22/async-await/" class="archive-article-date">
-  	<time datetime="2019-04-22T11:32:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><p>async fun()<br>函数前的async使得这个函数返回一个promise,即便这个函数中没有返回一个promise,类似于将return变成resolve</p>
-<h2 id="await"><a href="#await" class="headerlink" title="await"></a>await</h2><p>await等待一个promise执行完才会继续执行后面的操作,但是要注意的是await必须出现在async里面，也就是不能在非async的函数里面使用await   </p>
-<p>在循环语句中使用await时，forEach是不能生效的,可以使用其他循环语句<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">await (async () =&gt; &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">      await funcA();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/22/async-await/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-electron20190416" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/16/electron20190416/">Electron打包成win安装包并创建桌面快捷方式</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/16/electron20190416/" class="archive-article-date">
-  	<time datetime="2019-04-16T07:25:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Electron是由Github开发，用HTML，CSS和JavaScript来构建跨平台桌面应用程序的一个开源库。 Electron通过将Chromium和Node.js合并到同一个运行时环境中，并将其打包为Mac，Windows和Linux系统下的应用来实现这一目的。</p>
-<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>创建一个空文件夹，在该文件夹下运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure></p>
-<p>在package.json中添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"electron ."</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install electron --save-dev</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/04/16/electron20190416/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/16/electron20190416/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-my-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/15/my-first-blog/">多个git账号之间的切换</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/15/my-first-blog/" class="archive-article-date">
-  	<time datetime="2019-04-15T06:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>多个git账号，有的是github，有的是gitlab</p>
-<h2 id="生成sshkey"><a href="#生成sshkey" class="headerlink" title="生成sshkey"></a>生成sshkey</h2><p>具体参考各网站生成说明</p>
-<h2 id="主要修改-ssh-config"><a href="#主要修改-ssh-config" class="headerlink" title="主要修改.ssh/config"></a>主要修改.ssh/config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab</span></span><br><span class="line">Host gitlab.com</span><br><span class="line">  HostName gitlab.com</span><br><span class="line">  User user1</span><br><span class="line">  IdentityFile ~/.ssh/id_rsa</span><br><span class="line">  </span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">  HostName github.com</span><br><span class="line">  User user2</span><br><span class="line">  IdentityFile ~/.ssh/id_hub_rsa</span><br></pre></td></tr></table></figure>
-<p>Host后的名字随意，HostName需要git地址</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/15/my-first-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/14/hello-world/">hexo基本命名</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/14/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-14T06:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="创建一个新的文件"><a href="#创建一个新的文件" class="headerlink" title="创建一个新的文件"></a>创建一个新的文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My-New-Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>执行后，会自动将生成的页面提交到github上，需要安装hexo-deployer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>然后在根目录的_config.yml修改deploy<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git   </span><br><span class="line">  repo: &lt;上传git地址&gt; </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/14/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -643,8 +306,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

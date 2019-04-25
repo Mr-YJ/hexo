@@ -6,16 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>YJ的博客</title>
+  <title>js-xlsx的使用 | YJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="前端,开发者,程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YJ的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="安装使用123npm install xlsx --saveimport XLSX from &quot;xlsx&quot;;">
+<meta name="keywords" content="前端,开发者,程序猿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js-xlsx的使用">
+<meta property="og:url" content="http://yoursite.com/2019/04/24/js-xlsx的使用/index.html">
 <meta property="og:site_name" content="YJ的博客">
+<meta property="og:description" content="安装使用123npm install xlsx --saveimport XLSX from &quot;xlsx&quot;;">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/images/jsxlsx1.png">
+<meta property="og:image" content="http://yoursite.com/images/jsxlsx2.png">
+<meta property="og:image" content="http://yoursite.com/images/jsxlsx3.png">
+<meta property="og:updated_time" content="2019-04-25T09:47:58.271Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YJ的博客">
+<meta name="twitter:title" content="js-xlsx的使用">
+<meta name="twitter:description" content="安装使用123npm install xlsx --saveimport XLSX from &quot;xlsx&quot;;">
+<meta name="twitter:image" content="http://yoursite.com/images/jsxlsx1.png">
   
     <link rel="alternative" href="/atom.xml" title="YJ的博客" type="application/atom+xml">
   
@@ -139,87 +147,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-vuex" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-js-xlsx的使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/25/vuex/">vuex</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/25/vuex/" class="archive-article-date">
-  	<time datetime="2019-04-25T06:44:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式</p>
-<h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install vuex --save</span><br><span class="line"></span><br><span class="line">import Vue from <span class="string">'vue'</span>;</span><br><span class="line">import Vuex from <span class="string">'vuex'</span>;</span><br><span class="line">Vue.use(Vuex);</span><br></pre></td></tr></table></figure>
-<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ul>
-<li>Vuex 使用单一状态树,个应用将仅仅包含一个 store 实例,store基本上就是一个容器，它包含着应用中大部分的状态 (state)</li>
-<li>更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串的 事件类型 (type) 和 一个 回调函数 (handler)。这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数；一条重要的原则就是要记住 mutation 必须是同步函数</li>
-<li>Action 提交的是 mutation，而不是直接变更状态;Action 可以包含任意异步操作;Action 函数接受一个与 store 实例具有相同方法和属性的 context 对象，因此你可以调用 context.commit 提交一个 mutation，或者通过 context.state 和 context.getters 来获取 state 和 getters</li>
-</ul>
-        
-          <a class="article-more-a" href="/2019/04/25/vuex/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/25/vuex/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js-xlsx的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/24/js-xlsx的使用/">js-xlsx的使用</a>
+    <h1 class="article-title" itemprop="name">
+      js-xlsx的使用
     </h1>
   
 
@@ -233,9 +168,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install xlsx --save</span><br><span class="line"></span><br><span class="line">import XLSX from <span class="string">"xlsx"</span>;</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/#more">more >></a>
-        
+<a id="more"></a> 
+<h2 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> jsono = [</span><br><span class="line">  &#123;</span><br><span class="line">    col1: <span class="string">"表头1"</span>,</span><br><span class="line">    col2: <span class="string">"表头2"</span>,</span><br><span class="line">    col3: <span class="string">"表头3"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    col1: <span class="string">"数据1"</span>,</span><br><span class="line">    col2: <span class="string">"数据2"</span>,</span><br><span class="line">    col3: <span class="string">"数据3"</span></span><br><span class="line">  &#125;，</span><br><span class="line">];</span><br><span class="line">downloadExl(jsono) &#123;</span><br><span class="line">  <span class="built_in">let</span> json = jsono;</span><br><span class="line">  <span class="built_in">let</span> tmpDown; //导出的二进制对象</span><br><span class="line">  <span class="built_in">let</span> keyMap = []; //获取键</span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">let</span> k <span class="keyword">in</span> json[0]) &#123;</span><br><span class="line">    keyMap.push(k);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">let</span> tmpdata = []; //用来保存转换好的json</span><br><span class="line">  json</span><br><span class="line">    .map((v, i) =&gt;</span><br><span class="line">      keyMap.map((k, j) =&gt;</span><br><span class="line">        Object.assign(</span><br><span class="line">          &#123;&#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            //运用ES6内容</span><br><span class="line">            v: v[k],</span><br><span class="line">            position:</span><br><span class="line">              (j &gt; 25 ? this.getCharCol(j) : String.fromCharCode(65 + j)) +</span><br><span class="line">              (i + 1)</span><br><span class="line">          &#125;</span><br><span class="line">        )</span><br><span class="line">      )</span><br><span class="line">    )</span><br><span class="line">    .reduce((prev, next) =&gt; prev.concat(next))</span><br><span class="line">    .forEach(</span><br><span class="line">      (v, i) =&gt;</span><br><span class="line">        (tmpdata[v.position] = &#123;</span><br><span class="line">          v: v.v</span><br><span class="line">        &#125;)</span><br><span class="line">    );</span><br><span class="line">  <span class="built_in">let</span> outputPos = Object.keys(tmpdata); //设置区域,比如表格从A1到D10</span><br><span class="line">  <span class="built_in">let</span> tmpWB = &#123;</span><br><span class="line">    SheetNames: [<span class="string">"sheet1"</span>], //保存的表标题</span><br><span class="line">    Sheets: &#123;</span><br><span class="line">      sheet1: Object.assign(</span><br><span class="line">        &#123;&#125;,</span><br><span class="line">        tmpdata, //内容</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">"!ref"</span>: outputPos[0] + <span class="string">":"</span> + outputPos[outputPos.length - 1] //设置填充区域</span><br><span class="line">        &#125;</span><br><span class="line">      )</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  tmpDown = new Blob(</span><br><span class="line">    [</span><br><span class="line">      this.s2ab(</span><br><span class="line">        XLSX.write(</span><br><span class="line">          tmpWB,</span><br><span class="line">          &#123;</span><br><span class="line">            bookType: <span class="string">"xlsx"</span>,</span><br><span class="line">            bookSST: <span class="literal">false</span>,</span><br><span class="line">            <span class="built_in">type</span>: <span class="string">"binary"</span></span><br><span class="line">          &#125; //这里的数据是用来定义导出的格式类型</span><br><span class="line">        )</span><br><span class="line">      )</span><br><span class="line">    ],</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="built_in">type</span>: <span class="string">""</span></span><br><span class="line">    &#125;</span><br><span class="line">  ); //创建二进制对象写入转换好的字节流</span><br><span class="line">  this.saveAs(</span><br><span class="line">    tmpDown,</span><br><span class="line">    <span class="string">"sheet1.xlsx"</span></span><br><span class="line">  );</span><br><span class="line">&#125;,</span><br><span class="line">saveAs(obj, fileName) &#123;</span><br><span class="line">  //当然可以自定义简单的下载文件实现方式</span><br><span class="line">  <span class="built_in">let</span> tmpa = document.createElement(<span class="string">"a"</span>);</span><br><span class="line">  tmpa.download = fileName || <span class="string">"下载"</span>;</span><br><span class="line">  tmpa.href = URL.createObjectURL(obj); //绑定a标签</span><br><span class="line">  tmpa.click(); //模拟点击实现下载</span><br><span class="line">  setTimeout(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    //延时释放</span><br><span class="line">    URL.revokeObjectURL(obj); //用URL.revokeObjectURL()来释放这个object URL</span><br><span class="line">  &#125;, 100);</span><br><span class="line">&#125;,</span><br><span class="line">s2ab(s) &#123;</span><br><span class="line">  //字符串转字符流</span><br><span class="line">  <span class="built_in">let</span> buf = new ArrayBuffer(s.length);</span><br><span class="line">  <span class="built_in">let</span> view = new Uint8Array(buf);</span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i != s.length; ++i) &#123;</span><br><span class="line">    view[i] = s.charCodeAt(i) &amp; 0xff;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">return</span> buf;</span><br><span class="line">&#125;,</span><br><span class="line">getCharCol(n) &#123;</span><br><span class="line">  <span class="built_in">let</span> temCol = <span class="string">""</span>,</span><br><span class="line">    s = <span class="string">""</span>,</span><br><span class="line">    m = 0;</span><br><span class="line">  <span class="keyword">while</span> (n &gt; 0) &#123;</span><br><span class="line">    m = (n % 26) + 1;</span><br><span class="line">    s = String.fromCharCode(m + 64) + s;</span><br><span class="line">    n = (n - m) / 26;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">return</span> s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/jsxlsx1.png" alt></p>
+<h3 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h3><p>单元地址对象分别存储在{c:C, r:R}其中C并且R是0索引的列和行号。例如，单元格地址B5由对象表示{c:1, r:4}。</p>
+<p>小区范围对象存储为{s:S, e:E}其中S是所述第一小区和 E在该范围内的最后一个单元。范围包括在内。例如，范围A3:B7由对象表示{s:{c:0, r:2}, e:{c:1, r:6}}。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> tmpWB = &#123;</span><br><span class="line">  SheetNames: [<span class="string">"sheet1"</span>], //保存的表标题</span><br><span class="line">  Sheets: &#123;</span><br><span class="line">    sheet1: Object.assign(</span><br><span class="line">      &#123;&#125;,</span><br><span class="line">      tmpdata, //内容</span><br><span class="line">      &#123;</span><br><span class="line">        //设置填充区域</span><br><span class="line">        <span class="string">"!ref"</span>: outputPos[0] + <span class="string">":"</span> + outputPos[outputPos.length - 1], </span><br><span class="line">        //合并第一行，A1、B1、C1三个单元格</span><br><span class="line">        <span class="string">"!merges"</span>: [&#123;</span><br><span class="line">            s: &#123;</span><br><span class="line">              c: 0,</span><br><span class="line">              r: 0</span><br><span class="line">            &#125;,</span><br><span class="line">            e: &#123;</span><br><span class="line">              c: 2,</span><br><span class="line">              r: 0</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        ],</span><br><span class="line">      &#125;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/jsxlsx2.png" alt></p>
+<h3 id="表格样式"><a href="#表格样式" class="headerlink" title="表格样式"></a>表格样式</h3><p>js-xlsx不支持直接修改样式，需要安装xlsx-style插件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install xlsx-style --save</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> tmpWB = &#123;</span><br><span class="line">  SheetNames: [<span class="string">"sheet1"</span>], //保存的表标题</span><br><span class="line">  Sheets: &#123;</span><br><span class="line">    sheet1: Object.assign(</span><br><span class="line">      &#123;&#125;,</span><br><span class="line">      tmpdata, // 内容</span><br><span class="line">      &#123;</span><br><span class="line">        // 设置填充区域</span><br><span class="line">        <span class="string">"!ref"</span>: outputPos[0] + <span class="string">":"</span> + outputPos[outputPos.length - 1], </span><br><span class="line">        // 合并第一行，A1、B1、C1三个单元格</span><br><span class="line">        <span class="string">"!merges"</span>: [&#123;</span><br><span class="line">            s: &#123;</span><br><span class="line">              c: 0,</span><br><span class="line">              r: 0</span><br><span class="line">            &#125;,</span><br><span class="line">            e: &#123;</span><br><span class="line">              c: 2,</span><br><span class="line">              r: 0</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        ],</span><br><span class="line">        // 设置A1单元格的样式</span><br><span class="line">        A1: &#123;</span><br><span class="line">          v: <span class="string">'表头1'</span>,</span><br><span class="line">          s: &#123;</span><br><span class="line">            font: &#123;</span><br><span class="line">                sz: 13,</span><br><span class="line">                bold: <span class="literal">true</span>,</span><br><span class="line">                color: &#123;</span><br><span class="line">                    rgb: <span class="string">"FFFFAA00"</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            alignment: &#123;</span><br><span class="line">                horizontal: <span class="string">"center"</span>,</span><br><span class="line">                vertical: <span class="string">"center"</span></span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/jsxlsx3.png" alt></p>
+<h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"file"</span>onchange=<span class="string">"importf(this)"</span> /&gt;</span><br><span class="line">&lt;div id=<span class="string">"demo"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  /*</span><br><span class="line">  FileReader共有4种读取方法：</span><br><span class="line">  1.readAsArrayBuffer(file)：将文件读取为ArrayBuffer。</span><br><span class="line">  2.readAsBinaryString(file)：将文件读取为二进制字符串</span><br><span class="line">  3.readAsDataURL(file)：将文件读取为Data URL</span><br><span class="line">  4.readAsText(file, [encoding])：将文件读取为文本，encoding缺省值为<span class="string">'UTF-8'</span></span><br><span class="line">  */</span><br><span class="line">  var wb;//读取完成的数据</span><br><span class="line">  var rABS = <span class="literal">false</span>; //是否将文件读取为二进制字符串</span><br><span class="line"></span><br><span class="line">  <span class="keyword">function</span> importf(obj) &#123;//导入</span><br><span class="line">      <span class="keyword">if</span>(!obj.files) &#123;</span><br><span class="line">          <span class="built_in">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      var f = obj.files[0];</span><br><span class="line">      var reader = new FileReader();</span><br><span class="line">      reader.onload = <span class="keyword">function</span>(e) &#123;</span><br><span class="line">          var data = e.target.result;</span><br><span class="line">          <span class="keyword">if</span>(rABS) &#123;</span><br><span class="line">              wb = XLSX.read(btoa(fixdata(data)), &#123;//手动转化</span><br><span class="line">                  <span class="built_in">type</span>: <span class="string">'base64'</span></span><br><span class="line">              &#125;);</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">              wb = XLSX.read(data, &#123;</span><br><span class="line">                  <span class="built_in">type</span>: <span class="string">'binary'</span></span><br><span class="line">              &#125;);</span><br><span class="line">          &#125;</span><br><span class="line">          //wb.SheetNames[0]是获取Sheets中第一个Sheet的名字</span><br><span class="line">          //wb.Sheets[Sheet名]获取第一个Sheet的数据</span><br><span class="line">          document.getElementById(<span class="string">"demo"</span>).innerHTML= JSON.stringify( XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]]) );</span><br><span class="line">      &#125;;</span><br><span class="line">      <span class="keyword">if</span>(rABS) &#123;</span><br><span class="line">          reader.readAsArrayBuffer(f);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          reader.readAsBinaryString(f);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">function</span> fixdata(data) &#123; //文件流转BinaryString</span><br><span class="line">      var o = <span class="string">""</span>,</span><br><span class="line">          l = 0,</span><br><span class="line">          w = 10240;</span><br><span class="line">      <span class="keyword">for</span>(; l &lt; data.byteLength / w; ++l) o += String.fromCharCode.apply(null, new Uint8Array(data.slice(l * w, l * w + w)));</span><br><span class="line">      o += String.fromCharCode.apply(null, new Uint8Array(data.slice(l * w)));</span><br><span class="line">      <span class="built_in">return</span> o;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -246,16 +188,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/24/js-xlsx的使用/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/04/25/vuex/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          vuex
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/23/Promise/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Promise</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -275,352 +285,14 @@
 
 
 
-
   
-    <article id="post-Promise" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/23/Promise/">Promise</a>
-    </h1>
   
 
-        
-        <a href="/2019/04/23/Promise/" class="archive-article-date">
-  	<time datetime="2019-04-23T09:26:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>promise对象用于异步操作，一共有三种状态</p>
-<ul>
-<li>pending 初始值</li>
-<li>fulfilled 操作成功</li>
-<li>rejected 操作失败  </li>
-</ul>
-<p>promise还有两个方法</p>
-<ul>
-<li>resolve 将pending转为fulfilled</li>
-<li>reject 将pending转为rejected</li>
-</ul>
-<p>当状态改变后，promise.then就会执行</p>
-        
-          <a class="article-more-a" href="/2019/04/23/Promise/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/23/Promise/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-async-await" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/22/async-await/">async/await</a>
-    </h1>
   
 
-        
-        <a href="/2019/04/22/async-await/" class="archive-article-date">
-  	<time datetime="2019-04-22T11:32:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><p>async fun()<br>函数前的async使得这个函数返回一个promise,即便这个函数中没有返回一个promise,类似于将return变成resolve</p>
-<h2 id="await"><a href="#await" class="headerlink" title="await"></a>await</h2><p>await等待一个promise执行完才会继续执行后面的操作,但是要注意的是await必须出现在async里面，也就是不能在非async的函数里面使用await   </p>
-<p>在循环语句中使用await时，forEach是不能生效的,可以使用其他循环语句<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">await (async () =&gt; &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">      await funcA();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/22/async-await/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-electron20190416" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/16/electron20190416/">Electron打包成win安装包并创建桌面快捷方式</a>
-    </h1>
   
 
-        
-        <a href="/2019/04/16/electron20190416/" class="archive-article-date">
-  	<time datetime="2019-04-16T07:25:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Electron是由Github开发，用HTML，CSS和JavaScript来构建跨平台桌面应用程序的一个开源库。 Electron通过将Chromium和Node.js合并到同一个运行时环境中，并将其打包为Mac，Windows和Linux系统下的应用来实现这一目的。</p>
-<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>创建一个空文件夹，在该文件夹下运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure></p>
-<p>在package.json中添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"electron ."</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install electron --save-dev</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/04/16/electron20190416/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/16/electron20190416/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-my-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/15/my-first-blog/">多个git账号之间的切换</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/15/my-first-blog/" class="archive-article-date">
-  	<time datetime="2019-04-15T06:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>多个git账号，有的是github，有的是gitlab</p>
-<h2 id="生成sshkey"><a href="#生成sshkey" class="headerlink" title="生成sshkey"></a>生成sshkey</h2><p>具体参考各网站生成说明</p>
-<h2 id="主要修改-ssh-config"><a href="#主要修改-ssh-config" class="headerlink" title="主要修改.ssh/config"></a>主要修改.ssh/config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab</span></span><br><span class="line">Host gitlab.com</span><br><span class="line">  HostName gitlab.com</span><br><span class="line">  User user1</span><br><span class="line">  IdentityFile ~/.ssh/id_rsa</span><br><span class="line">  </span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">  HostName github.com</span><br><span class="line">  User user2</span><br><span class="line">  IdentityFile ~/.ssh/id_hub_rsa</span><br></pre></td></tr></table></figure>
-<p>Host后的名字随意，HostName需要git地址</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/15/my-first-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/14/hello-world/">hexo基本命名</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/14/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-14T06:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="创建一个新的文件"><a href="#创建一个新的文件" class="headerlink" title="创建一个新的文件"></a>创建一个新的文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My-New-Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>执行后，会自动将生成的页面提交到github上，需要安装hexo-deployer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>然后在根目录的_config.yml修改deploy<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git   </span><br><span class="line">  repo: &lt;上传git地址&gt; </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/14/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -643,8 +315,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

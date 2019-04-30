@@ -141,6 +141,142 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-浏览器调用摄像头" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/30/浏览器调用摄像头/">浏览器调用摄像头</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/30/浏览器调用摄像头/" class="archive-article-date">
+  	<time datetime="2019-04-30T07:47:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>HTML5的getUserMedia API为用户提供访问硬件设备媒体（摄像头、视频、音频、地理位置等）的接口，基于该接口，开发者可以在不依赖任何浏览器插件的条件下访问硬件媒体设备。    </li>
+<li>getUserMedia API最初是navigator.getUserMedia，目前已被最新Web标准废除，变更为navigator.mediaDevices.getUserMedia（），但浏览器支持情况不如旧版API普及。 </li>
+<li>MediaDevices.getUserMedia（）方法提示用户允许使用一个视频和/或一个音频输入设备，例如相机或屏幕共享和/或麦克风。如果用户给予许可，就返回一个Promise对象，MediaStream对象作为此Promise对象的Resolved［成功］状态的回调函数参数，相应的，如果用户拒绝了许可，或者没有媒体可用的情况下PermissionDeniedError或者NotFoundError作为此Promise的Rejected［失败］状态的回调函数参数。注意，由于用户不会被要求必须作出允许或者拒绝的选择，所以返回的Promise对象可能既不会触发resolve也不会触发 reject。</li>
+<li>调用此接口网站必须要在https下</li>
+</ul>
+        
+          <a class="article-more-a" href="/2019/04/30/浏览器调用摄像头/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/30/浏览器调用摄像头/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-linux基础命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/29/linux基础命令/">linux基础命令</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/29/linux基础命令/" class="archive-article-date">
+  	<time datetime="2019-04-29T09:17:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="scp远程拷贝文件"><a href="#scp远程拷贝文件" class="headerlink" title="scp远程拷贝文件"></a>scp远程拷贝文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp dist.zip root@1.1.1.1:/var/tmp    // 上传本地文件到远程服务器上：scp [文件] [用户]@[ip]:[目标路径]</span><br><span class="line"></span><br><span class="line">scp root@1.1.1.1:/var/tmp/dist.zip /downlod   // 从远程服务复制文件到本地：scp [用户]@[ip]:[目标文件] [本地路径]</span><br></pre></td></tr></table></figure>
+<h2 id="ssh远程连接登录"><a href="#ssh远程连接登录" class="headerlink" title="ssh远程连接登录"></a>ssh远程连接登录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@1.1.1.1    // ssh [用户]@[ip]</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2019/04/29/linux基础命令/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/29/linux基础命令/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-vuex" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

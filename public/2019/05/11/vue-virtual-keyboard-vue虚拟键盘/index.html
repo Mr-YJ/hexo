@@ -6,16 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>YJ的博客</title>
+  <title>vue-virtual-keyboard vue虚拟键盘 | YJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="前端,开发者,程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YJ的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="安装使用123456789101112131415161718192021222324252627282930313233npm install --save vue-virtual-keyboardimport $ from &quot;jquery&quot;;import Keyboard from &quot;vue-virtual-keyboard/src/Keyboard&quot;;// 作为组件使用&amp;lt;Keyboar">
+<meta name="keywords" content="前端,开发者,程序猿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue-virtual-keyboard vue虚拟键盘">
+<meta property="og:url" content="http://yoursite.com/2019/05/11/vue-virtual-keyboard-vue虚拟键盘/index.html">
 <meta property="og:site_name" content="YJ的博客">
+<meta property="og:description" content="安装使用123456789101112131415161718192021222324252627282930313233npm install --save vue-virtual-keyboardimport $ from &quot;jquery&quot;;import Keyboard from &quot;vue-virtual-keyboard/src/Keyboard&quot;;// 作为组件使用&amp;lt;Keyboar">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/images/vuekeyboard.jpg">
+<meta property="og:updated_time" content="2019-05-10T03:36:32.758Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YJ的博客">
+<meta name="twitter:title" content="vue-virtual-keyboard vue虚拟键盘">
+<meta name="twitter:description" content="安装使用123456789101112131415161718192021222324252627282930313233npm install --save vue-virtual-keyboardimport $ from &quot;jquery&quot;;import Keyboard from &quot;vue-virtual-keyboard/src/Keyboard&quot;;// 作为组件使用&amp;lt;Keyboar">
+<meta name="twitter:image" content="http://yoursite.com/images/vuekeyboard.jpg">
   
     <link rel="alternative" href="/atom.xml" title="YJ的博客" type="application/atom+xml">
   
@@ -139,16 +145,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-vue-virtual-keyboard-vue虚拟键盘" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-vue-virtual-keyboard-vue虚拟键盘" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/11/vue-virtual-keyboard-vue虚拟键盘/">vue-virtual-keyboard vue虚拟键盘</a>
+    <h1 class="article-title" itemprop="name">
+      vue-virtual-keyboard vue虚拟键盘
     </h1>
   
 
@@ -162,9 +166,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">npm install --save vue-virtual-keyboard</span><br><span class="line"></span><br><span class="line">import $ from <span class="string">"jquery"</span>;</span><br><span class="line">import Keyboard from <span class="string">"vue-virtual-keyboard/src/Keyboard"</span>;</span><br><span class="line"></span><br><span class="line">// 作为组件使用</span><br><span class="line">&lt;Keyboard :options=<span class="string">"keyboardOption"</span> class=<span class="string">"user-name"</span> v-model=<span class="string">"userName"</span>&gt;&lt;/Keyboard&gt;</span><br><span class="line"></span><br><span class="line">components: &#123;</span><br><span class="line">  Keyboard</span><br><span class="line">&#125;,</span><br><span class="line"><span class="function"><span class="title">data</span></span>() &#123;</span><br><span class="line">  <span class="built_in">return</span> &#123;</span><br><span class="line">    userName: <span class="string">""</span>,</span><br><span class="line">    // 详细参数可参考https://github.com/Mottie/Keyboard/wiki/Options</span><br><span class="line">     keyboardOption: &#123;</span><br><span class="line">        usePreview: <span class="literal">false</span>,</span><br><span class="line">        stickyShift: <span class="literal">false</span>,</span><br><span class="line">        autoAccept: <span class="literal">true</span>,</span><br><span class="line">        language: <span class="string">"zh"</span>,</span><br><span class="line">        display: &#123;</span><br><span class="line">          // 覆盖显示文字</span><br><span class="line">          accept: <span class="string">"确认"</span>,</span><br><span class="line">          bksp: <span class="string">"删除"</span>,</span><br><span class="line">          cancel: <span class="string">"取消"</span>,</span><br><span class="line">          enter: <span class="string">"回车"</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 获取数据的时候可以直接通过userName获取输入值</span><br><span class="line">// 清楚数据的时候除了设置userName=<span class="string">""</span>外还需手动清楚界面上的输入框value值</span><br><span class="line">// $(<span class="string">".user-name input"</span>).val(<span class="string">""</span>);</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/05/11/vue-virtual-keyboard-vue虚拟键盘/#more">more >></a>
-        
+<a id="more"></a>
+<p><img src="/images/vuekeyboard.jpg" alt></p>
+
       
 
       
@@ -175,16 +179,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/11/vue-virtual-keyboard-vue虚拟键盘/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/11/vue-virtual-keyboard-vue虚拟键盘/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/10/flex布局/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">flex布局</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -204,624 +267,14 @@
 
 
 
-
-  
-    <article id="post-flex布局" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/10/flex布局/">flex布局</a>
-    </h1>
-  
-
-        
-        <a href="/2019/05/10/flex布局/" class="archive-article-date">
-  	<time datetime="2019-05-10T02:48:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>采用 Flex布局的元素，display: flex; 称为Flex容器（flex container），它的所有子元素自动成为容器成员<br>容器默认存在两根轴：水平的主轴和垂直的交叉轴。</p>
-<h2 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h2><ul>
-<li>row（默认值）：主轴为水平方向，起点在左端。<br><img src="/images/flexrow.png" alt></li>
-<li>row-reverse：主轴为水平方向，起点在右端。<br><img src="/images/flexrowreverse.png" alt></li>
-<li>column：主轴为垂直方向，起点在上沿。<br><img src="/images/flexcolumn.png" alt></li>
-<li>column-reverse：主轴为垂直方向，起点在下沿<br><img src="/images/flexcolumnreverse.png" alt></li>
-</ul>
-        
-          <a class="article-more-a" href="/2019/05/10/flex布局/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/10/flex布局/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js实现网页触摸滚动" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/09/js实现网页触摸滚动/">js实现网页触摸滚动</a>
-    </h1>
-  
-
-        
-        <a href="/2019/05/09/js实现网页触摸滚动/" class="archive-article-date">
-  	<time datetime="2019-05-09T10:21:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">import $ from <span class="string">"jquery"</span>;</span><br><span class="line"></span><br><span class="line">methods: &#123;</span><br><span class="line">  down: <span class="keyword">function</span>(evt) &#123;</span><br><span class="line">    <span class="built_in">let</span> target = evt.srcElement;</span><br><span class="line">    <span class="built_in">let</span> scrollWidth = 0;</span><br><span class="line">    <span class="built_in">let</span> scrollHeight = 0;</span><br><span class="line">    <span class="keyword">while</span> (target.parentNode &amp;&amp; scrollHeight === 0 &amp;&amp; scrollWidth === 0) &#123;</span><br><span class="line">      target = target.parentNode;</span><br><span class="line">      scrollWidth = target.scrollWidth - target.clientWidth;</span><br><span class="line">      scrollHeight = target.scrollHeight - target.clientHeight;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 可以判断元素是否存在某个类名来决定是否触发滚动</span><br><span class="line">    <span class="keyword">if</span> ($(target).attr(<span class="string">'class'</span>) &amp;&amp; $(target).attr(<span class="string">'class'</span>).indexOf(<span class="string">'draging'</span>) !== -1) &#123;</span><br><span class="line">      <span class="built_in">return</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (scrollHeight) &#123;</span><br><span class="line">      <span class="built_in">let</span> x = evt.x;</span><br><span class="line">      <span class="built_in">let</span> y = evt.y;</span><br><span class="line">      this.scrollInfo = &#123; target, x, y &#125;;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      this.scrollInfo = null;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  up: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    this.scrollInfo = null;</span><br><span class="line">  &#125;,</span><br><span class="line">  move: <span class="keyword">function</span>(evt) &#123;</span><br><span class="line">    <span class="keyword">if</span> (this.scrollInfo) &#123;</span><br><span class="line">      <span class="built_in">let</span> deltaX = this.scrollInfo.x - evt.x;</span><br><span class="line">      <span class="built_in">let</span> deltaY = this.scrollInfo.y - evt.y;</span><br><span class="line">      this.scrollInfo.target.scrollLeft += deltaX * 0.1;</span><br><span class="line">      this.scrollInfo.target.scrollTop += deltaY * 0.1;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,</span><br><span class="line"><span class="function"><span class="title">mounted</span></span>() &#123;</span><br><span class="line">  document.addEventListener(<span class="string">"mousedown"</span>, this.down, <span class="literal">false</span>);</span><br><span class="line">  document.addEventListener(<span class="string">"mouseup"</span>, this.up, <span class="literal">false</span>);</span><br><span class="line">  document.addEventListener(<span class="string">"mousemove"</span>, this.move, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">  //去除监听事件</span><br><span class="line">  // 这边methods里面的方法要写成实名函数，因为removeEventListener只有对实名函数才能生效</span><br><span class="line">  document.addEventListener(<span class="string">"mousedown"</span>, this.down, <span class="literal">false</span>);</span><br><span class="line">  document.addEventListener(<span class="string">"mouseup"</span>, this.up, <span class="literal">false</span>);</span><br><span class="line">  document.addEventListener(<span class="string">"mousemove"</span>, this.move, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/09/js实现网页触摸滚动/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-interactjs的" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/08/interactjs的/">interactjs的</a>
-    </h1>
-  
-
-        
-        <a href="/2019/05/08/interactjs的/" class="archive-article-date">
-  	<time datetime="2019-05-08T09:47:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>interactjs用于现代浏览器的JavaScript拖放、调整大小和多点触摸手势的js库</p>
-<h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">$ npm install interactjs@next --save</span><br><span class="line"></span><br><span class="line">import interact from <span class="string">'interactjs'</span></span><br><span class="line"></span><br><span class="line">// class为draggable的元素添加拖动操作</span><br><span class="line">interact(<span class="string">'.draggable'</span>)   </span><br><span class="line">  .draggable(&#123;</span><br><span class="line">    inertia: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">    // 将元素保存在其父元素的区域内</span><br><span class="line">    modifiers: [</span><br><span class="line">      interact.modifiers.restrict(&#123;</span><br><span class="line">        restriction: <span class="string">"parent"</span>,  //也可以用元素写法 restriction: $(<span class="string">".list"</span>)[0],</span><br><span class="line">        endOnly: <span class="literal">true</span>,</span><br><span class="line">        elementRect: &#123; top: 0, left: 0, bottom: 1, right: 1 &#125;</span><br><span class="line">      &#125;),</span><br><span class="line">    ],</span><br><span class="line"></span><br><span class="line">    autoScroll: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">    // 在每个dragmove事件上调用这个函数</span><br><span class="line">    onmove: dragMoveListener,</span><br><span class="line"></span><br><span class="line">    // 在每个dragend事件上调用这个函数</span><br><span class="line">    onend: <span class="keyword">function</span> (event) &#123;</span><br><span class="line">      // 判断拖动元素是否进入放入区域内，如果没有就重置位置</span><br><span class="line">      <span class="keyword">if</span> (event.target.getAttribute(<span class="string">"class"</span>).indexOf(<span class="string">"can-drop"</span>) == -1) &#123;</span><br><span class="line">        this.reset(event);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">// 拖动实现</span><br><span class="line">dragMoveListener(event) &#123;</span><br><span class="line">  var target = event.target,</span><br><span class="line">    x = (parseFloat(target.getAttribute(<span class="string">"data-x"</span>)) || 0) + event.dx,</span><br><span class="line">    y = (parseFloat(target.getAttribute(<span class="string">"data-y"</span>)) || 0) + event.dy;</span><br><span class="line"></span><br><span class="line">  target.style.zIndex = <span class="string">"9999"</span>;</span><br><span class="line"></span><br><span class="line">  target.style.webkitTransform = target.style.transform =</span><br><span class="line">    <span class="string">"translate("</span> + x + <span class="string">"px, "</span> + y + <span class="string">"px)"</span>;</span><br><span class="line"></span><br><span class="line">  target.setAttribute(<span class="string">"data-x"</span>, x);</span><br><span class="line">  target.setAttribute(<span class="string">"data-y"</span>, y);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/05/08/interactjs的/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/08/interactjs的/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-浏览器调用摄像头" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/30/浏览器调用摄像头/">浏览器调用摄像头</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/30/浏览器调用摄像头/" class="archive-article-date">
-  	<time datetime="2019-04-30T07:47:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>HTML5的getUserMedia API为用户提供访问硬件设备媒体（摄像头、视频、音频、地理位置等）的接口，基于该接口，开发者可以在不依赖任何浏览器插件的条件下访问硬件媒体设备。    </li>
-<li>getUserMedia API最初是navigator.getUserMedia，目前已被最新Web标准废除，变更为navigator.mediaDevices.getUserMedia（），但浏览器支持情况不如旧版API普及。 </li>
-<li>MediaDevices.getUserMedia（）方法提示用户允许使用一个视频和/或一个音频输入设备，例如相机或屏幕共享和/或麦克风。如果用户给予许可，就返回一个Promise对象，MediaStream对象作为此Promise对象的Resolved［成功］状态的回调函数参数，相应的，如果用户拒绝了许可，或者没有媒体可用的情况下PermissionDeniedError或者NotFoundError作为此Promise的Rejected［失败］状态的回调函数参数。注意，由于用户不会被要求必须作出允许或者拒绝的选择，所以返回的Promise对象可能既不会触发resolve也不会触发 reject。</li>
-<li>调用此接口网站必须要在https下</li>
-</ul>
-        
-          <a class="article-more-a" href="/2019/04/30/浏览器调用摄像头/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/30/浏览器调用摄像头/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-linux基础命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/29/linux基础命令/">linux基础命令</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/29/linux基础命令/" class="archive-article-date">
-  	<time datetime="2019-04-29T09:17:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="scp远程拷贝文件"><a href="#scp远程拷贝文件" class="headerlink" title="scp远程拷贝文件"></a>scp远程拷贝文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp dist.zip root@1.1.1.1:/var/tmp    // 上传本地文件到远程服务器上：scp [文件] [用户]@[ip]:[目标路径]</span><br><span class="line"></span><br><span class="line">scp root@1.1.1.1:/var/tmp/dist.zip /downlod   // 从远程服务复制文件到本地：scp [用户]@[ip]:[目标文件] [本地路径]</span><br></pre></td></tr></table></figure>
-<h2 id="ssh远程连接登录"><a href="#ssh远程连接登录" class="headerlink" title="ssh远程连接登录"></a>ssh远程连接登录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@1.1.1.1    // ssh [用户]@[ip]</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/04/29/linux基础命令/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/29/linux基础命令/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vuex" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/25/vuex/">vuex</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/25/vuex/" class="archive-article-date">
-  	<time datetime="2019-04-25T06:44:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式</p>
-<h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install vuex --save</span><br><span class="line"></span><br><span class="line">import Vue from <span class="string">'vue'</span>;</span><br><span class="line">import Vuex from <span class="string">'vuex'</span>;</span><br><span class="line">Vue.use(Vuex);</span><br></pre></td></tr></table></figure>
-<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ul>
-<li>Vuex 使用单一状态树,个应用将仅仅包含一个 store 实例,store基本上就是一个容器，它包含着应用中大部分的状态 (state)</li>
-<li>更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串的 事件类型 (type) 和 一个 回调函数 (handler)。这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数；一条重要的原则就是要记住 mutation 必须是同步函数</li>
-<li>Action 提交的是 mutation，而不是直接变更状态;Action 可以包含任意异步操作;Action 函数接受一个与 store 实例具有相同方法和属性的 context 对象，因此你可以调用 context.commit 提交一个 mutation，或者通过 context.state 和 context.getters 来获取 state 和 getters</li>
-</ul>
-        
-          <a class="article-more-a" href="/2019/04/25/vuex/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/25/vuex/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js-xlsx的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/24/js-xlsx的使用/">js-xlsx的使用</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/24/js-xlsx的使用/" class="archive-article-date">
-  	<time datetime="2019-04-24T07:41:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install xlsx --save</span><br><span class="line"></span><br><span class="line">import XLSX from <span class="string">"xlsx"</span>;</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Promise" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/23/Promise/">Promise</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/23/Promise/" class="archive-article-date">
-  	<time datetime="2019-04-23T09:26:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>promise对象用于异步操作，一共有三种状态</p>
-<ul>
-<li>pending 初始值</li>
-<li>fulfilled 操作成功</li>
-<li>rejected 操作失败  </li>
-</ul>
-<p>promise还有两个方法</p>
-<ul>
-<li>resolve 将pending转为fulfilled</li>
-<li>reject 将pending转为rejected</li>
-</ul>
-<p>当状态改变后，promise.then就会执行</p>
-        
-          <a class="article-more-a" href="/2019/04/23/Promise/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/23/Promise/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-async-await" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/22/async-await/">async/await</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/22/async-await/" class="archive-article-date">
-  	<time datetime="2019-04-22T11:32:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><p>async fun()<br>函数前的async使得这个函数返回一个promise,即便这个函数中没有返回一个promise,类似于将return变成resolve</p>
-<h2 id="await"><a href="#await" class="headerlink" title="await"></a>await</h2><p>await等待一个promise执行完才会继续执行后面的操作,但是要注意的是await必须出现在async里面，也就是不能在非async的函数里面使用await   </p>
-<p>在循环语句中使用await时，forEach是不能生效的,可以使用其他循环语句<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">await (async () =&gt; &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">      await funcA();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/22/async-await/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -844,8 +297,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

@@ -6,16 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | YJ的博客</title>
+  <title>flex布局 | YJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="前端,开发者,程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YJ的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/page/2/index.html">
+  <meta name="description" content="采用 Flex布局的元素，display: flex; 称为Flex容器（flex container），它的所有子元素自动成为容器成员容器默认存在两根轴：水平的主轴和垂直的交叉轴。 flex-direction row（默认值）：主轴为水平方向，起点在左端。 row-reverse：主轴为水平方向，起点在右端。 column：主轴为垂直方向，起点在上沿。 column-reverse：主轴为垂直">
+<meta name="keywords" content="前端,开发者,程序猿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flex布局">
+<meta property="og:url" content="http://yoursite.com/2019/05/10/flex布局/index.html">
 <meta property="og:site_name" content="YJ的博客">
+<meta property="og:description" content="采用 Flex布局的元素，display: flex; 称为Flex容器（flex container），它的所有子元素自动成为容器成员容器默认存在两根轴：水平的主轴和垂直的交叉轴。 flex-direction row（默认值）：主轴为水平方向，起点在左端。 row-reverse：主轴为水平方向，起点在右端。 column：主轴为垂直方向，起点在上沿。 column-reverse：主轴为垂直">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/images/flexrow.png">
+<meta property="og:image" content="http://yoursite.com/images/flexrowreverse.png">
+<meta property="og:image" content="http://yoursite.com/images/flexcolumn.png">
+<meta property="og:image" content="http://yoursite.com/images/flexcolumnreverse.png">
+<meta property="og:image" content="http://yoursite.com/images/spacearound.png">
+<meta property="og:image" content="http://yoursite.com/images/alignitem.png">
+<meta property="og:image" content="http://yoursite.com/images/aligncontent.png">
+<meta property="og:updated_time" content="2019-05-10T03:20:17.791Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YJ的博客">
+<meta name="twitter:title" content="flex布局">
+<meta name="twitter:description" content="采用 Flex布局的元素，display: flex; 称为Flex容器（flex container），它的所有子元素自动成为容器成员容器默认存在两根轴：水平的主轴和垂直的交叉轴。 flex-direction row（默认值）：主轴为水平方向，起点在左端。 row-reverse：主轴为水平方向，起点在右端。 column：主轴为垂直方向，起点在上沿。 column-reverse：主轴为垂直">
+<meta name="twitter:image" content="http://yoursite.com/images/flexrow.png">
   
     <link rel="alternative" href="/atom.xml" title="YJ的博客" type="application/atom+xml">
   
@@ -139,79 +151,170 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-flex布局" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/15/my-first-blog/" class="archive-article-date">
-  	<time datetime="2019-04-15T06:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/15/my-first-blog/">多个git账号之间的切换</a>
+    <h1 class="article-title" itemprop="name">
+      flex布局
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/14/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-14T06:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-14</time>
+        
+        <a href="/2019/05/10/flex布局/" class="archive-article-date">
+  	<time datetime="2019-05-10T02:48:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/14/hello-world/">hexo基本命名</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>采用 Flex布局的元素，display: flex; 称为Flex容器（flex container），它的所有子元素自动成为容器成员<br>容器默认存在两根轴：水平的主轴和垂直的交叉轴。</p>
+<h2 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h2><ul>
+<li>row（默认值）：主轴为水平方向，起点在左端。<br><img src="/images/flexrow.png" alt></li>
+<li>row-reverse：主轴为水平方向，起点在右端。<br><img src="/images/flexrowreverse.png" alt></li>
+<li>column：主轴为垂直方向，起点在上沿。<br><img src="/images/flexcolumn.png" alt></li>
+<li>column-reverse：主轴为垂直方向，起点在下沿<br><img src="/images/flexcolumnreverse.png" alt></li>
+</ul>
+<a id="more"></a>
+<h2 id="flex-wrap"><a href="#flex-wrap" class="headerlink" title="flex-wrap"></a>flex-wrap</h2><ul>
+<li>nowrap(默认)：不换行</li>
+<li>wrap：换行，往下换行</li>
+<li>wrap-reverse：换行，往上换行</li>
+</ul>
+<h2 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h2><p>项目在主轴上的对齐方式</p>
+<ul>
+<li>flex-start（默认）：左对齐</li>
+<li>flex-end：右对齐</li>
+<li>center： 居中</li>
+<li>space-between：两端对齐，项目之间的间隔相等</li>
+<li>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍类似于margin: 0px 20px;<br><img src="/images/spacearound.png" alt></li>
+</ul>
+<h2 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h2><ul>
+<li>flex-start：交叉轴的起点对齐。</li>
+<li>flex-end：交叉轴的终点对齐。</li>
+<li>center：交叉轴的中点对齐。</li>
+<li>baseline: 项目的第一行文字的基线对齐。</li>
+<li>stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。<br><img src="/images/alignitem.png" alt></li>
+</ul>
+<h2 id="align-content"><a href="#align-content" class="headerlink" title="align-content"></a>align-content</h2><p>定义多根轴线的对齐方式,如果项目只有一根轴线，该属性不起作用。</p>
+<ul>
+<li>flex-start：与交叉轴的起点对齐。</li>
+<li>flex-end：与交叉轴的终点对齐。</li>
+<li>center：与交叉轴的中点对齐。</li>
+<li>space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
+<li>space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>
+<li>stretch（默认值）：轴线占满整个交叉轴。<br><img src="/images/aligncontent.png" alt></li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/10/flex布局/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/05/09/js实现网页触摸滚动/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js实现网页触摸滚动</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2019/">&laquo; Prev</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+
+  
+
   
 
 
@@ -235,8 +338,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

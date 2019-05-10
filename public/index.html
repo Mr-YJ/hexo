@@ -141,6 +141,77 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-flex布局" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/10/flex布局/">flex布局</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/10/flex布局/" class="archive-article-date">
+  	<time datetime="2019-05-10T02:48:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>采用 Flex布局的元素，display: flex; 称为Flex容器（flex container），它的所有子元素自动成为容器成员<br>容器默认存在两根轴：水平的主轴和垂直的交叉轴。</p>
+<h2 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h2><ul>
+<li>row（默认值）：主轴为水平方向，起点在左端。<br><img src="/images/flexrow.png" alt></li>
+<li>row-reverse：主轴为水平方向，起点在右端。<br><img src="/images/flexrowreverse.png" alt></li>
+<li>column：主轴为垂直方向，起点在上沿。<br><img src="/images/flexcolumn.png" alt></li>
+<li>column-reverse：主轴为垂直方向，起点在下沿<br><img src="/images/flexcolumnreverse.png" alt></li>
+</ul>
+        
+          <a class="article-more-a" href="/2019/05/10/flex布局/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/10/flex布局/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-js实现网页触摸滚动" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -721,72 +792,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/04/16/electron20190416/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-my-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/15/my-first-blog/">多个git账号之间的切换</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/15/my-first-blog/" class="archive-article-date">
-  	<time datetime="2019-04-15T06:47:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>多个git账号，有的是github，有的是gitlab</p>
-<h2 id="生成sshkey"><a href="#生成sshkey" class="headerlink" title="生成sshkey"></a>生成sshkey</h2><p>具体参考各网站生成说明</p>
-<h2 id="主要修改-ssh-config"><a href="#主要修改-ssh-config" class="headerlink" title="主要修改.ssh/config"></a>主要修改.ssh/config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitlab</span></span><br><span class="line">Host gitlab.com</span><br><span class="line">  HostName gitlab.com</span><br><span class="line">  User user1</span><br><span class="line">  IdentityFile ~/.ssh/id_rsa</span><br><span class="line">  </span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">  HostName github.com</span><br><span class="line">  User user2</span><br><span class="line">  IdentityFile ~/.ssh/id_hub_rsa</span><br></pre></td></tr></table></figure>
-<p>Host后的名字随意，HostName需要git地址</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/15/my-first-blog/">展开全文 >></a>
         </p>
       
 

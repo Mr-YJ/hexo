@@ -9,7 +9,7 @@ tags:
 dataURLtoBlob(dataurl) {
   var arr = dataurl.split(","),
     mime = arr[0].match(/:(.*?);/)[1],
-    bstr = atob(arr[1]),
+    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错
     n = bstr.length,
     u8arr = new Uint8Array(n);
   while (n--) {

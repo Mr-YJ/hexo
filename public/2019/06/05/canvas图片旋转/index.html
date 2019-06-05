@@ -6,20 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>base64转blob | YJ的博客</title>
+  <title>canvas图片旋转 | YJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法一1234567891011dataURLtoBlob(dataurl) &amp;#123;  var arr = dataurl.split(&quot;,&quot;),    mime = arr[0].match(/:(.*?);/)[1],    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错    n = bstr.length,    u8ar">
+  <meta name="description" content="想要对canvas里的图片进行操作，只能对canvas对象操作，旋转图片就是要去旋转canvas，其中旋转点是canvas的原点（0,0）点,旋转后对应的x、y轴也会相应的变化，比如旋转90度">
 <meta name="keywords" content="前端,开发者,程序猿">
 <meta property="og:type" content="article">
-<meta property="og:title" content="base64转blob">
-<meta property="og:url" content="http://yoursite.com/2019/05/30/base64转blob/index.html">
+<meta property="og:title" content="canvas图片旋转">
+<meta property="og:url" content="http://yoursite.com/2019/06/05/canvas图片旋转/index.html">
 <meta property="og:site_name" content="YJ的博客">
-<meta property="og:description" content="方法一1234567891011dataURLtoBlob(dataurl) &amp;#123;  var arr = dataurl.split(&quot;,&quot;),    mime = arr[0].match(/:(.*?);/)[1],    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错    n = bstr.length,    u8ar">
+<meta property="og:description" content="想要对canvas里的图片进行操作，只能对canvas对象操作，旋转图片就是要去旋转canvas，其中旋转点是canvas的原点（0,0）点,旋转后对应的x、y轴也会相应的变化，比如旋转90度">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-05T07:26:12.983Z">
+<meta property="og:image" content="http://yoursite.com/images/canvsrotate.png">
+<meta property="og:image" content="http://yoursite.com/images/canvasrotate2.png">
+<meta property="og:image" content="http://yoursite.com/images/canvasrotate3.png">
+<meta property="og:updated_time" content="2019-06-05T07:24:57.794Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="base64转blob">
-<meta name="twitter:description" content="方法一1234567891011dataURLtoBlob(dataurl) &amp;#123;  var arr = dataurl.split(&quot;,&quot;),    mime = arr[0].match(/:(.*?);/)[1],    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错    n = bstr.length,    u8ar">
+<meta name="twitter:title" content="canvas图片旋转">
+<meta name="twitter:description" content="想要对canvas里的图片进行操作，只能对canvas对象操作，旋转图片就是要去旋转canvas，其中旋转点是canvas的原点（0,0）点,旋转后对应的x、y轴也会相应的变化，比如旋转90度">
+<meta name="twitter:image" content="http://yoursite.com/images/canvsrotate.png">
   
     <link rel="alternative" href="/atom.xml" title="YJ的博客" type="application/atom+xml">
   
@@ -143,30 +147,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-base64转blob" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-canvas图片旋转" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      base64转blob
+      canvas图片旋转
     </h1>
   
 
         
-        <a href="/2019/05/30/base64转blob/" class="archive-article-date">
-  	<time datetime="2019-05-30T08:00:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
+        <a href="/2019/06/05/canvas图片旋转/" class="archive-article-date">
+  	<time datetime="2019-06-05T06:56:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dataURLtoBlob(dataurl) &#123;</span><br><span class="line">  var arr = dataurl.split(<span class="string">","</span>),</span><br><span class="line">    mime = arr[0].match(/:(.*?);/)[1],</span><br><span class="line">    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错</span><br><span class="line">    n = bstr.length,</span><br><span class="line">    u8arr = new Uint8Array(n);</span><br><span class="line">  <span class="keyword">while</span> (n--) &#123;</span><br><span class="line">    u8arr[n] = bstr.charCodeAt(n);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">return</span> new Blob([u8arr], &#123; <span class="built_in">type</span>: mime &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const b64toBlob = (b64Data, contentType=<span class="string">''</span>, sliceSize=512) =&gt; &#123;</span><br><span class="line">  const byteCharacters = atob(b64Data);</span><br><span class="line">  const byteArrays = [];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">let</span> offset = 0; offset &lt; byteCharacters.length; offset += sliceSize) &#123;</span><br><span class="line">    const slice = byteCharacters.slice(offset, offset + sliceSize);</span><br><span class="line"></span><br><span class="line">    const byteNumbers = new Array(slice.length);</span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; slice.length; i++) &#123;</span><br><span class="line">      byteNumbers[i] = slice.charCodeAt(i);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    const byteArray = new Uint8Array(byteNumbers);</span><br><span class="line">    byteArrays.push(byteArray);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  const blob = new Blob(byteArrays, &#123;<span class="built_in">type</span>: contentType&#125;);</span><br><span class="line">  <span class="built_in">return</span> blob;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var url = <span class="string">"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="</span></span><br><span class="line"></span><br><span class="line">fetch(url)</span><br><span class="line">.<span class="keyword">then</span>(res =&gt; res.blob())</span><br><span class="line">.<span class="keyword">then</span>(blob =&gt; console.log(blob))</span><br></pre></td></tr></table></figure>
-<h2 id="方法四"><a href="#方法四" class="headerlink" title="方法四"></a>方法四</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const b64toBlob = async (b64Data, contentType=<span class="string">'application/octet-stream'</span>) =&gt; &#123;</span><br><span class="line">  const url = `data:<span class="variable">$&#123;contentType&#125;</span>;base64,<span class="variable">$&#123;b64Data&#125;</span>`;</span><br><span class="line">  const response = await fetch(url);</span><br><span class="line">  const blob = await response.blob();</span><br><span class="line">  <span class="built_in">return</span> blob;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <p>想要对canvas里的图片进行操作，只能对canvas对象操作，旋转图片就是要去旋转canvas，其中旋转点是canvas的原点（0,0）点,旋转后对应的x、y轴也会相应的变化，比如旋转90度</p>
+<p><img src="/images/canvsrotate.png" alt></p>
+<a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas class=<span class="string">"pic-canvas"</span> width=<span class="string">"600"</span> height=<span class="string">"600"</span> id=<span class="string">"canvas"</span>&gt;&lt;/canvas&gt;</span><br><span class="line"></span><br><span class="line">this.context = document.getElementById(<span class="string">"canvas"</span>).getContext(<span class="string">"2d"</span>);</span><br><span class="line">this.context.restore();  // 重置画布状态到第一次save的时候</span><br><span class="line">this.context.clearRect(0, 0, 600, 600); // 清除画布内容</span><br><span class="line"></span><br><span class="line">this.context.save()  // 在旋转前先保存当前画布状态</span><br><span class="line">this.context.translate(500, 0); // 为了保证旋转后保证图片还在正中间显示，需要计算偏移量</span><br><span class="line">this.context.rotate((90 * Math.PI) / 180);  // 旋转90°</span><br><span class="line">this.context.drawImage(this.video, 0, 0, 600, 400);  // 从画布0，0点绘制一个x轴为600，y轴为400的图片</span><br></pre></td></tr></table></figure>
+<p><img src="/images/canvasrotate2.png" alt><br><img src="/images/canvasrotate3.png" alt></p>
+
       
 
       
@@ -224,7 +230,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/30/base64转blob/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/06/05/canvas图片旋转/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -238,18 +244,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/06/05/canvas图片旋转/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          canvas图片旋转
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/22/js导出pdf/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js导出pdf</div>
+    <a href="/2019/05/30/base64转blob/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">base64转blob</div>
       <i class="icon-circle-right"></i>
     </a>
   

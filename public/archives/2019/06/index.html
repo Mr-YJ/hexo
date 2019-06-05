@@ -6,20 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>base64转blob | YJ的博客</title>
+  <title>Archives: 2019/6 | YJ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法一1234567891011dataURLtoBlob(dataurl) &amp;#123;  var arr = dataurl.split(&quot;,&quot;),    mime = arr[0].match(/:(.*?);/)[1],    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错    n = bstr.length,    u8ar">
-<meta name="keywords" content="前端,开发者,程序猿">
-<meta property="og:type" content="article">
-<meta property="og:title" content="base64转blob">
-<meta property="og:url" content="http://yoursite.com/2019/05/30/base64转blob/index.html">
+  <meta name="keywords" content="前端,开发者,程序猿">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YJ的博客">
+<meta property="og:url" content="http://yoursite.com/archives/2019/06/index.html">
 <meta property="og:site_name" content="YJ的博客">
-<meta property="og:description" content="方法一1234567891011dataURLtoBlob(dataurl) &amp;#123;  var arr = dataurl.split(&quot;,&quot;),    mime = arr[0].match(/:(.*?);/)[1],    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错    n = bstr.length,    u8ar">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-05T07:26:12.983Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="base64转blob">
-<meta name="twitter:description" content="方法一1234567891011dataURLtoBlob(dataurl) &amp;#123;  var arr = dataurl.split(&quot;,&quot;),    mime = arr[0].match(/:(.*?);/)[1],    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错    n = bstr.length,    u8ar">
+<meta name="twitter:title" content="YJ的博客">
   
     <link rel="alternative" href="/atom.xml" title="YJ的博客" type="application/atom+xml">
   
@@ -143,146 +139,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-base64转blob" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      base64转blob
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/06/05/canvas图片旋转/" class="archive-article-date">
+  	<time datetime="2019-06-05T06:56:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/05/canvas图片旋转/">canvas图片旋转</a>
     </h1>
   
 
-        
-        <a href="/2019/05/30/base64转blob/" class="archive-article-date">
-  	<time datetime="2019-05-30T08:00:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dataURLtoBlob(dataurl) &#123;</span><br><span class="line">  var arr = dataurl.split(<span class="string">","</span>),</span><br><span class="line">    mime = arr[0].match(/:(.*?);/)[1],</span><br><span class="line">    bstr = atob(arr[1]),  // atob在遇到有base64里有特殊字符如中文的时候会报错</span><br><span class="line">    n = bstr.length,</span><br><span class="line">    u8arr = new Uint8Array(n);</span><br><span class="line">  <span class="keyword">while</span> (n--) &#123;</span><br><span class="line">    u8arr[n] = bstr.charCodeAt(n);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">return</span> new Blob([u8arr], &#123; <span class="built_in">type</span>: mime &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const b64toBlob = (b64Data, contentType=<span class="string">''</span>, sliceSize=512) =&gt; &#123;</span><br><span class="line">  const byteCharacters = atob(b64Data);</span><br><span class="line">  const byteArrays = [];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="built_in">let</span> offset = 0; offset &lt; byteCharacters.length; offset += sliceSize) &#123;</span><br><span class="line">    const slice = byteCharacters.slice(offset, offset + sliceSize);</span><br><span class="line"></span><br><span class="line">    const byteNumbers = new Array(slice.length);</span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; slice.length; i++) &#123;</span><br><span class="line">      byteNumbers[i] = slice.charCodeAt(i);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    const byteArray = new Uint8Array(byteNumbers);</span><br><span class="line">    byteArrays.push(byteArray);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  const blob = new Blob(byteArrays, &#123;<span class="built_in">type</span>: contentType&#125;);</span><br><span class="line">  <span class="built_in">return</span> blob;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var url = <span class="string">"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="</span></span><br><span class="line"></span><br><span class="line">fetch(url)</span><br><span class="line">.<span class="keyword">then</span>(res =&gt; res.blob())</span><br><span class="line">.<span class="keyword">then</span>(blob =&gt; console.log(blob))</span><br></pre></td></tr></table></figure>
-<h2 id="方法四"><a href="#方法四" class="headerlink" title="方法四"></a>方法四</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const b64toBlob = async (b64Data, contentType=<span class="string">'application/octet-stream'</span>) =&gt; &#123;</span><br><span class="line">  const url = `data:<span class="variable">$&#123;contentType&#125;</span>;base64,<span class="variable">$&#123;b64Data&#125;</span>`;</span><br><span class="line">  const response = await fetch(url);</span><br><span class="line">  const blob = await response.blob();</span><br><span class="line">  <span class="built_in">return</span> blob;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-      
+        <div class="article-info info-on-right">
+          
+          
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/30/base64转blob/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/06/05/canvas图片旋转/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          canvas图片旋转
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/05/22/js导出pdf/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js导出pdf</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -305,8 +204,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -141,6 +141,72 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-js导出pdf" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/22/js导出pdf/">js导出pdf</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/22/js导出pdf/" class="archive-article-date">
+  	<time datetime="2019-05-22T09:01:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>html2canvas 将html页面转换为图片</li>
+<li>jsPDF 将图片导出pdf</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">npm install jspdf --save</span><br><span class="line">npm html2canvas jspdf --save</span><br><span class="line"></span><br><span class="line">import jsPDF from <span class="string">"jspdf"</span>;</span><br><span class="line">import html2canvas from <span class="string">"html2canvas"</span>;</span><br><span class="line"></span><br><span class="line">html2canvas(document.getElementById(<span class="string">"export_content"</span>)).<span class="keyword">then</span>(canvas =&gt; &#123;</span><br><span class="line">  var contentWidth = canvas.width;</span><br><span class="line">  var contentHeight = canvas.height;</span><br><span class="line"></span><br><span class="line">  //一页pdf显示html页面生成的canvas高度;</span><br><span class="line">  var pageHeight = (contentWidth / 592.28) * 841.89;</span><br><span class="line">  //未生成pdf的html页面高度</span><br><span class="line">  var leftHeight = contentHeight;</span><br><span class="line">  //pdf页面偏移</span><br><span class="line">  var position = 0;</span><br><span class="line">  //html页面生成的canvas在pdf中图片的宽高（a4纸的尺寸[595.28,841.89]）</span><br><span class="line">  var imgWidth = 595.28;</span><br><span class="line">  var imgHeight = (592.28 / contentWidth) * contentHeight;</span><br><span class="line"></span><br><span class="line">  var pageData = canvas.toDataURL(<span class="string">"image/jpeg"</span>, 1.0);</span><br><span class="line">  var pdf = new jsPDF(<span class="string">""</span>, <span class="string">"pt"</span>, <span class="string">"a4"</span>);</span><br><span class="line"></span><br><span class="line">  //有两个高度需要区分，一个是html页面的实际高度，和生成pdf的页面高度(841.89)</span><br><span class="line">  //当内容未超过pdf一页显示的范围，无需分页</span><br><span class="line">  <span class="keyword">if</span> (leftHeight &lt; pageHeight) &#123;</span><br><span class="line">    pdf.addImage(pageData, <span class="string">"JPEG"</span>, 0, 0, imgWidth, imgHeight);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">while</span> (leftHeight &gt; 0) &#123;</span><br><span class="line">      pdf.addImage(pageData, <span class="string">"JPEG"</span>, 0, position, imgWidth, imgHeight);</span><br><span class="line">      leftHeight -= pageHeight;</span><br><span class="line">      position -= 841.89;</span><br><span class="line">      //避免添加空白页</span><br><span class="line">      <span class="keyword">if</span> (leftHeight &gt; 0) &#123;</span><br><span class="line">        pdf.addPage();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  pdf.save(<span class="string">"test.pdf"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/22/js导出pdf/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-js模拟点击下载文件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -717,71 +783,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/04/25/vuex/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js-xlsx的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/24/js-xlsx的使用/">js-xlsx的使用</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/24/js-xlsx的使用/" class="archive-article-date">
-  	<time datetime="2019-04-24T07:41:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install xlsx --save</span><br><span class="line"></span><br><span class="line">import XLSX from <span class="string">"xlsx"</span>;</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/24/js-xlsx的使用/">展开全文 >></a>
         </p>
       
 

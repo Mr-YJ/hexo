@@ -141,6 +141,77 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vuex" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/25/vuex/">vuex</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/25/vuex/" class="archive-article-date">
+  	<time datetime="2019-04-25T06:44:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式</p>
+<h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install vuex --save</span><br><span class="line"></span><br><span class="line">import Vue from <span class="string">'vue'</span>;</span><br><span class="line">import Vuex from <span class="string">'vuex'</span>;</span><br><span class="line">Vue.use(Vuex);</span><br></pre></td></tr></table></figure>
+<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ul>
+<li>Vuex 使用单一状态树,个应用将仅仅包含一个 store 实例,store基本上就是一个容器，它包含着应用中大部分的状态 (state)</li>
+<li>更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串的 事件类型 (type) 和 一个 回调函数 (handler)。这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数；一条重要的原则就是要记住 mutation 必须是同步函数</li>
+<li>Action 提交的是 mutation，而不是直接变更状态;Action 可以包含任意异步操作;Action 函数接受一个与 store 实例具有相同方法和属性的 context 对象，因此你可以调用 context.commit 提交一个 mutation，或者通过 context.state 和 context.getters 来获取 state 和 getters</li>
+</ul>
+        
+          <a class="article-more-a" href="/2019/04/25/vuex/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/25/vuex/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-js-xlsx的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

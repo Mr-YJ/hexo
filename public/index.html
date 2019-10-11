@@ -141,6 +141,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-pointer-event" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/11/pointer-event/">pointer-event</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/11/pointer-event/" class="archive-article-date">
+  	<time datetime="2019-10-11T03:34:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="pointer-event"><a href="#pointer-event" class="headerlink" title="pointer-event"></a>pointer-event</h2><p>CSS 属性指定在什么情况下 (如果有) 某个特定的图形元素可以成为鼠标事件的 target。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">pointer-events: auto;</span><br><span class="line">pointer-events: none;</span><br><span class="line">pointer-events: visiblePainted; /* SVG only */</span><br><span class="line">pointer-events: visibleFill;    /* SVG only */</span><br><span class="line">pointer-events: visibleStroke;  /* SVG only */</span><br><span class="line">pointer-events: visible;        /* SVG only */</span><br><span class="line">pointer-events: painted;        /* SVG only */</span><br><span class="line">pointer-events: fill;           /* SVG only */</span><br><span class="line">pointer-events: stroke;         /* SVG only */</span><br><span class="line">pointer-events: all;            /* SVG only */</span><br><span class="line"></span><br><span class="line">/* Global values */</span><br><span class="line">pointer-events: inherit;</span><br><span class="line">pointer-events: initial;</span><br><span class="line">pointer-events: <span class="built_in">unset</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>auto<br>与 pointer-events 属性未指定时的表现效果相同，对于 SVG 内容，该值与 visiblePainted 效果相同</li>
+<li>none<br>元素永远不会成为鼠标事件的 target。但是，当其后代元素的 pointer-events 属性指定其他值时，鼠标事件可以指向后代元素，在这种情况下，鼠标事件将在捕获或冒泡阶段触发父元素的事件侦听器。</li>
+<li>visiblePainted<br>只适用于 SVG。元素只有在以下情况才会成为鼠标事件的目标：<br>visibility 属性值为 visible，且鼠标指针在元素内部，且 fill 属性指定了 none 之外的值<br>visibility 属性值为 visible，鼠标指针在元素边界上，且 stroke 属性指定了 none 之外的值</li>
+<li>visibleFill<br>只适用于 SVG。只有在元素 visibility 属性值为 visible，且鼠标指针在元素内部时,元素才会成为鼠标事件的目标，fill 属性的值不影响事件处理。</li>
+<li>visibleStroke<br>只适用于 SVG。只有在元素 visibility 属性值为 visible，且鼠标指针在元素边界时,元素才会成为鼠标事件的目标，stroke 属性的值不影响事件处理。</li>
+<li>visible<br>只适用于 SVG。只有在元素 visibility 属性值为 visible，且鼠标指针在元素内部或边界时,元素才会成为鼠标事件的目标，fill 和 stroke 属性的值不影响事件处理。</li>
+<li>painted<br>只适用于 SVG。元素只有在以下情况才会成为鼠标事件的目标：<br>鼠标指针在元素内部，且 fill 属性指定了 none 之外的值<br>鼠标指针在元素边界上，且 stroke 属性指定了 none 之外的值<br>visibility 属性的值不影响事件处理。</li>
+<li>fill<br>只适用于 SVG。只有鼠标指针在元素内部时,元素才会成为鼠标事件的目标，fill 和 visibility 属性的值不影响事件处理。</li>
+<li>stroke<br> 只适用于 SVG。只有鼠标指针在元素边界上时,元素才会成为鼠标事件的目标，stroke 和 visibility 属性的值不影响事件处理。</li>
+<li>all<br> 只适用于 SVG。只有鼠标指针在元素内部或边界时,元素才会成为鼠标事件的目标，fill、stroke 和 visibility 属性的值不影响事件处理。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/11/pointer-event/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-html导出doc" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -731,72 +807,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/06/11/canvas鼠标绘制截图/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-canvas图片旋转" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/05/canvas图片旋转/">canvas图片旋转</a>
-    </h1>
-  
-
-        
-        <a href="/2019/06/05/canvas图片旋转/" class="archive-article-date">
-  	<time datetime="2019-06-05T06:56:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>想要对canvas里的图片进行操作，只能对canvas对象操作，旋转图片就是要去旋转canvas，其中旋转点是canvas的原点（0,0）点,旋转后对应的x、y轴也会相应的变化，比如旋转90度</p>
-<p><img src="/images/canvsrotate.png" alt></p>
-        
-          <a class="article-more-a" href="/2019/06/05/canvas图片旋转/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/06/05/canvas图片旋转/">展开全文 >></a>
         </p>
       
 
